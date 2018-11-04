@@ -1,0 +1,632 @@
+nav {
+    background-color: #272727;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav img {
+    height: 40px;
+}
+.links a.active {
+    background-color: #9b8266;
+    margin: 2px 2px;
+    padding: 2px 14px;
+    border-radius: 6px;
+}
+body {
+    margin:  0;
+    padding: 0;
+}
+* {
+    font-family: 'Open Sans', 'Montserrat', 'Microsoft Yahei', sans-serif;
+}
+.triggerSubmenu ul {
+    position: absolute;
+    top: 64px;
+    right: 10%;
+    list-style: none;
+    padding-left: 0;
+    z-index: 999;
+    max-width: 160px;
+    opacity: 0;
+    transition: .2s;
+}
+.triggerSubmenu ul li {
+    background-color: rgba(255, 255, 255, 0.3); 
+    margin: 5px 0;
+    padding: 3px 10px;
+    font-weight: 300;
+    transition: .2s;
+}
+.triggerSubmenu ul li:hover {
+    background-color: #fff;
+    color: #000;
+}
+#projectNav:hover ul {
+    opacity: 1;
+}
+.navContainer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .4s;
+    border-bottom: 3px solid transparent;
+    padding: 20px 0;
+    font-family: 'Open Sans';
+}
+nav a:hover {
+    color:#fcf6f2;
+    text-decoration: none;
+}
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+.navContainer .links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+}
+.topContainer {
+    height: 90vh;
+    width: 100%;
+}
+.topContainer img {
+    height: 100%;
+    width: 100%;
+}
+.topContainer .overlay {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: inherit;
+    width: 100%;
+}
+.topContainer .overlay .titleContainer {
+    margin: 0 auto;
+}
+.titleContainer * {
+    color: #fff;
+    text-align: center;
+}
+.carousel {
+    height: inherit;
+}
+.carousel-inner {
+    height: inherit;
+}
+.carousel-item {
+    height: inherit;
+}
+.carousel-caption {
+    bottom: 40%;
+}
+.carousel-control-next.cal-nav, .carousel-control-prev.cal-nav {
+    font-size: 50px;
+    color: #fff;
+    transition: .2s;
+    opacity: 1;
+}
+.cal-nav i {
+    font-size: 50px;
+    position: relative;
+    top: 20%;
+}
+.carousel-control-next.cal-nav:hover, .carousel-control-prev.cal-nav:hover {
+    opacity: .8;
+}
+.titleContainer h1 {
+    margin-top: 0;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.titleContainer p {
+    font-weight: 300;
+    margin: 5px 0;
+    font-family: 'Microsoft Yahei', sans-serif;
+}
+.primaryBtn {
+    background-color: #A38158;
+    color: #fff;
+    padding: 16px 35px;
+    border-radius: 35px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: .4s;
+    box-sizing: border-box;
+    margin: 30px auto;
+    font-weight: 600;
+}
+.primaryBtn:hover {
+    text-decoration: none;
+    background-color: #8b745c;
+    color: #dbdbdb;
+}
+.primaryBtn i {
+    vertical-align: -6px;
+    margin-left: 5px;
+}
+.titleContainer i {
+    font-size: 50px;
+    transition: .4s;
+    position: absolute;
+    bottom: -50px;
+}
+.titleContainer i:hover {
+    color: #dbdbdb;
+}
+.aboutWrapper {
+    width: 100%;
+    background-color: #272727;
+    padding: 120px 0;
+}
+.aboutWrapper h1 {
+    margin-bottom: 120px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 38px;
+    font-weight: 700;
+}
+.aboutWrapper h1 span {
+    color: #A38158;
+    text-transform: uppercase;
+}
+.aboutContent {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+.aboutDetail {
+    width: 50%;
+}
+.aboutImg {
+    width: 50%;
+}
+.aboutWrapper .aboutDetail h2 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 27px;
+}
+.aboutWrapper .aboutDetail h2 span {
+    color: #A38158;
+}
+.aboutWrapper .aboutContent p {
+    color: #fff;
+    margin: 20px 0;
+    color: #999;
+    font-size: 16px; 
+}
+.aboutDetail ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+.aboutDetail ul li {
+    margin: 5px 0;
+    color: #999;
+    list-style: none;
+}
+.aboutDetail ul li span {
+    vertical-align: 5px;
+    margin-left: 5px;
+}
+.aboutDetail ul i {
+    color: #999;
+    height: 33px;
+    width: 33px;
+    box-sizing: border-box;
+    font-size: 25px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    padding: 3px;
+}
+.aboutImg img {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: brightness(80%);
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.12);
+
+}
+.aboutWrapper h1.yTitle {
+    margin-top: 120px;
+    margin-bottom: 0;
+}
+.projectSection .item {
+   height: 70vh;
+   z-index: 1;
+   position: relative;
+   transition: .4s;
+   background-color: #000;
+}
+.projectSection {
+    background-color: #272727
+}
+.projectSection .howard {
+    background-image: url(../img/howard/howard_preview.jpg);
+    background-size: cover;
+}
+.projectSection .meadow {
+    background-image: url(../img/garden_preview.jpg);
+    background-size: cover;
+}
+.projectSection .boutique {
+    background-image: url(../img/vertical_preview.jpg);
+    background-size: cover;
+}
+.projectSection .manhattan {
+    background-image: url(../img/manhattan/6.png);
+    background-size: cover;
+}
+.projectSection .canopy {
+    background-image: url(../img/manhattan/2.png);
+    background-size: cover;
+}
+.projectSection .item .overlay {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .4s;
+    height: inherit;
+    padding: 40px;
+} 
+.projectSection .item h4 {
+    color: #fff;
+    font-weight: 100;
+    line-height: 28px;
+}
+.owl-carousel .owl-stage-outer {
+    position: relative;
+}
+.projectSection .item:hover .overlay {
+    opacity: 0;
+    cursor: pointer;
+}
+.projectSection .item:hover .search {
+    opacity: 1;
+}
+.search i {
+    color: #fff;
+    font-size: 40px;
+}
+.search {
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 3
+}
+.search:hover {
+    cursor: pointer;
+}
+.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+    display: block;
+}
+.owl-theme .owl-nav [class*='owl-'] {
+    background-color: transparent;
+}
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background-color: transparent;
+}
+.owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    color: #dbdbdb;
+}
+.owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    color: #dbdbdb;
+}
+.projectSection .verticalText {
+    position: absolute;
+    left: -90px;
+    bottom: 190px;
+    transform: rotate(-90deg);
+    color: #dbdbdb;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 300px;
+}
+.contactSection {
+    padding: 120px 0;
+    background-color: #272727;
+    margin-top: -25px;
+}
+.contactSection .m {
+    margin: 0 auto;
+    width: 200px;
+    display: block;
+    margin-bottom: 120px;
+}
+.contactSection h1 {
+    margin-bottom: 120px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 38px;
+    font-weight: 700;
+}
+.contactSection h1 span {
+    color: #A38158;
+}
+.contactContent {
+    width: 70%;
+    margin: 0 auto;
+}
+.contactContent * {
+    color: #fff;
+}
+.contactContent h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+.contactContent ul {
+    padding-left: 0;
+    list-style: none;
+    padding-top: 3%;
+}
+.contactContent i {
+    margin-right: 15px;
+    width: 10px;
+    font-size: 25px;
+}
+.contactContent li {
+    margin: 18px 0;
+    font-weight: 100;
+    font-size: 14px;
+}
+.contactContent input {
+    background-color: #323232;
+    padding: 12px 10px;
+    font-size: 12px;
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #fff;
+    border-radius: 5px;
+}
+.contactContent input:focus {
+    outline: none;
+}
+.contactContent input::placeholder {
+    color: #999;
+}
+.contactContent textarea {
+    background-color: #323232;
+    padding: 10px 12px;
+    font-size: 12px;
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.contactContent textarea:focus {
+    outline: none;
+}
+.contact-form {
+    margin-top: 15px;
+}
+.contact-form a {
+    background-color: #A38158;
+    color: #fff;
+    padding: 16px 35px;
+    border-radius: 35px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: .4s;
+    box-sizing: border-box;
+    margin: 0px auto;
+    font-weight: 600;
+    float: right;
+}
+.contact-form a i {
+    vertical-align: -4px;
+    font-size: 18px;
+    width: auto;
+    margin-left: 5px;
+    margin-right: 0;
+}
+.contact-form a:hover {
+    background-color: #8b745c;
+}
+
+.footEdge {
+    background-color: #A38158;
+    padding-bottom: 2%;
+}
+
+.hotelRow {
+    padding-bottom: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly
+}
+.hotel h1 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    top: calc(50% - 12.5px);
+}
+.hotel .overlay {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: .4s;
+}
+.hotel {
+    background-size: cover;
+    min-height: 500px;
+    width: 100%;
+    position: relative;
+    transition: .4s;
+}
+.hotel:hover .overlay {
+    opacity: 0;
+    cursor: pointer;
+}
+.aboutBanner {
+    background-image: url(../img/about2.png);
+}
+.howardBanner {
+    background-image: url(../img/howard2.png);
+}
+.boutiqueBanner {
+    background-image: url(../img/boutique2.jpg);
+}
+.wuhanBanner {
+    background-image: url(../img/wuhan.png);
+}
+.manhattanBanner {
+    background-image: url(../img/manhattan2.png);
+}
+.meadowBanner {
+    background-image: url(../img/meadow1.png);
+}
+.grandBanner {
+    background-image: url(../img/grand.png);
+}
+.hotelTopBanner {
+    height: 85vh;
+    width: 100%;
+    background-size: cover;
+}
+.aboutPageContent {
+    width: 100%;
+    padding: 120px 10%;
+    background-color: #272727;
+}
+.aboutPageContent h1 {
+    color: #A38158;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 25px;
+    font-weight: 700;
+    display: block;
+}
+h1.aboutSubtitle {
+    margin-top: 60px;
+    margin-bottom: 60px
+}
+.aboutPageContent p {
+    color: #fff;
+    max-width: 60%;
+    margin: 25px auto;
+    font-size: 21px;
+    font-weight: 300;
+    text-align: justify;
+}
+.aboutFooter {
+    padding: 120px 0;
+}
+.aboutFooter img {
+    display: block;
+    width: 200px;
+    margin: 0px auto;
+}
+.aboutFooter {
+    background-color: #272727
+}
+.aboutFooterBanner {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../img/aboutbanner2.png);
+    background-size: cover;
+    filter: grayscale(50%);
+
+}
+.aboutFooterBanner .overlay {
+    background: linear-gradient(#272727, transparent);
+    height: 40vh;
+    width: 100%;
+}
+.aboutFooterBottom {
+    height: 20px;
+    width: 100%;
+    background-color: #A38158;
+}
+.hotelMap {
+    width: 60%;
+    display: block;
+    margin: 120px auto 0px auto;
+}
+.manhattanMap {
+    width: 60%;
+    display: block;
+    margin: 120px auto;
+}
+p.mapText {
+    font-size: 14px;
+    text-align: center;
+    color: #9b8266;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.gallery {
+    display: flex;
+    padding-top: 120px;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 120px;
+}
+.gallery img {
+    padding-right:5px;
+    width: 25%;
+    height: 150px;
+}
+@media screen and (max-width: 1200px) {
+    #aboutimg {
+        width: 100px;
+    }
+    .triggerSubmenu ul {
+        right: 5%; 
+    }
+    .grandBanner.hotelTopBanner {
+        background-position: 50% 0%;
+    }
+}

@@ -33,4 +33,4 @@
     
     <div class="footEdge">
     </div>
-    <?php include 'scripts.php' ?>
+    <?php include 'scripts.html' ?>
